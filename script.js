@@ -14,13 +14,13 @@ class Person {
 
 class Student extends Person {
 	study():void{
-		console.log(this.name+ 'is studying')
+		return `${this.name} is studying`;
 	}
 }
 
 class Teacher extends Person {
 	teach():void{
-		console.log(this.name+' is teaching`)
+		return `${this.name} is teaching`;
 	}
 }
 
@@ -28,3 +28,9 @@ class Teacher extends Person {
 window.Person = Person;
 window.Student = Student;
 window.Teacher = Teacher;
+
+const student = new Student("John",30);
+const teacher = new Teacher("John",30);
+console.log(student.study)
+console.log(teacher.teach)
+
