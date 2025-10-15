@@ -5,7 +5,7 @@ class Person {
 		this.age=age;
 	}
 	get name(){
-		return `${this.name}`;
+		return this.name;
 	}
 	set age(age:number){
 		this.age=age;
@@ -13,14 +13,14 @@ class Person {
 }
 
 class Student extends Person {
-	study():void{
-		return `${this.name} is studying`;
+	study(){
+		console.log(`${this.name} is studying`);
 	}
 }
 
 class Teacher extends Person {
-	teach():void{
-		return `${this.name} is teaching`;
+	teach(){
+		console.log(`${this.name} is teaching`);
 	}
 }
 
