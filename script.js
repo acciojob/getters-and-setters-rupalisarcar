@@ -35,6 +35,8 @@ window.Person = Person;
 window.Student = Student;
 window.Teacher = Teacher;
 
+const person = new Person("John", 25);
+
 const student = new Student("John",30);
 const teacher = new Teacher("John",30);
 console.log(student.study)
